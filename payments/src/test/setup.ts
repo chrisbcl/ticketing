@@ -5,9 +5,6 @@ let mongo: MongoMemoryServer;
 
 jest.mock('../nats-client-manager');
 
-process.env.STRIPE_KEY =
-    'sk_test_51HcKKmH2t4SEoWmlYjV1AY6BpSVFngdUZoKRjH8mn6TN0awSbAa1vaTtj04Wfj0ut4gKgWnnVAMhF1PFFIPe7NJK00KMn9dbn9';
-
 beforeAll(async () => {
     process.env.JWT_KEY = 'asdfg';
 
